@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>O portal das formas</h1>
+    </header>
+<main>
+    <article>
+        <h1>Calculo da area do setor circular</h1><br><br>
+        <h3>É possível calcular a área do setor circular sabendo o valor do comprimento do raio e a medida do ângulo central formado pelos raios que delimitam o setor circular. O cálculo também pode ser feito por meio dos comprimentos do arco e do raio.</h3><br><br>
+        <button onclick="setor_circular()"><h3>Fazer calculo</h3></button>
+    </article>
+
+        <script>
+            function setor_circular() {
+            var angulo_central = parseFloat(prompt("Insira o valor do ângulo central:"));
+            var raio = parseFloat(prompt("Insira o valor do raio:"));
+            var resultado = (angulo_central / 360) * 3.14 * (raio * 2);
+
+            alert("O resultado é " + resultado);
+            }
+        </script>
+    
+</main>
+    <footer>
+        <h3>© LeonardoBarbosa2023</h3>
+    </footer>
+
+</body>
+</html>

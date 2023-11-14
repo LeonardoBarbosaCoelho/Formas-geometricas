@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>O portal das formas</h1>
+    </header>
+<main>
+    <article>
+        <h1>Calculo da área do poligono regular</h1><br><br>
+        <h3>Os polígonos regulares são que possuem todos os lados e ângulos de mesma medida. Para calcular a áreas dos polígonos regulares, a fórmula geral é: semiperímetro multiplicado pelo apótema.</h3><br><br>
+        <button onclick="poligono_regular()"><h3>Fazer calculo</h3></button>
+    </article>
+
+        <script>
+            function poligono_regular() {
+            var Nlados = parseFloat(prompt("Insira o número de lados que tem seu poligono:"));
+            var compri = parseFloat(prompt("Insira o valor do comprimento de um dos lados do poligono:"));
+            var s = compri * compri
+            var tan = 3.14 / Nlados;
+            var resultado = (Nlados * s) / (4 * tan);
+
+            alert ("O resultado do calculo da área do poligono regular é " + resultado);
+            }
+        </script>
+        
+</main>
+    <footer>
+        <h3>© LeonardoBarbosa2023</h3>
+    </footer>
+
+</body>
+</html>

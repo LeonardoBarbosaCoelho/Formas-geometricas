@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>O portal das formas</h1>
+    </header>
+<main>
+    <article>
+        <h1>Calculo da área do tronco da piramide</h1><br><br>
+        <h3>A área do tronco da pirâmide pode ser obtida pela soma das áreas de suas bases com a área lateral. A área do tronco da pirâmide pode ser calculada de algumas formas diferentes. O mais comum é calcular a área de cada um dos polígonos separadamente e, depois, somar esses resultados.</h3><br><br>
+        <button onclick="tronco_piramide()"><h3>Fazer calculo</h3></button>
+    </article>
+
+        <script>
+            function tronco_piramide() {
+            var Rmaior = parseFloat(prompt("Insira o valor do raio maior:"));
+            var Rmenor = parseFloat(prompt("Insira o valor do raio menor:"));
+            var L = parseFloat(prompt("Insira o valor da Geratriz do tronco da pirâmide:"));
+            var resultado = 3.14 * (Rmaior + Rmenor) * L;
+
+            alert ("O resultado da área do tronco da pirâmide é " + resultado)
+            }
+        </script>
+    
+</main>
+    <footer>
+        <h3>© LeonardoBarbosa2023</h3>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>O portal das formas</h1>
+    </header>
+<main>
+    <article>
+        <h1>Calculo da área do trapezóide irregular</h1><br><br>
+        <h3>A área do trapézio é a soma das bases vezes a altura dividido por dois. Para calcular a área de um trapézio qualquer, somamos os comprimentos da base maior com o da base menor, multiplicamos o resultado da soma pela altura do trapézio e dividimos o produto por dois.</h3><br><br>
+        <button onclick="trapezoide_irregular()"><h3>Fazer calculo</h3></button>
+    </article>
+
+        <script>
+            function trapezoide_irregular() {
+            var Bmenor = parseFloat(prompt("Insira o valor da base menor:"));
+            var Bmaior = parseFloat(prompt("Insira o valor da base maior:"));
+            var h = parseFloat(prompt("Insira o valor da altura do trapézio:"));
+            var resultado = (Bmenor + Bmaior) * h / 2;
+
+            alert ("O resultado do calculo da área do trapezóide irregular é " + resultado);
+            }
+        </script>
+        
+</main>
+    <footer>
+        <h3>© LeonardoBarbosa2023</h3>
+    </footer>
+
+</body>
+</html>

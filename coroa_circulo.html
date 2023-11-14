@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>O portal das formas</h1>
+    </header>
+<main>
+    <article>
+        <h1>Calculo da coroa do circulo</h1><br><br>
+        <h3>A área da coroa circular representada pode ser calculada através da diferença entre as áreas totais das duas circunferências, isto é, área do círculo maior menos a área do círculo menor. Observação: Os resultados podem ser dados em função de π, caso seja necessário substitua π por seu valor aproximado, 3,14.</h3><br><br>
+        <button onclick="coroa_circulo()"><h3>Fazer calculo</h3></button>
+    </article>
+
+        <script>
+            function coroa_circulo() {
+            var raio_maior = parseFloat(prompt("Insira a medida do raio maior:"))
+            var raio_menor = parseFloat(prompt("Insira a medida do raio menor:"))
+            var resultado = raio_maior - raio_menor
+
+            alert("O resultado do calculo é" + resultado)
+            }
+        </script>
+
+        
+</main>
+    <footer>
+        <h3>© LeonardoBarbosa2023</h3>
+    </footer>
+    
+</body>
+</html>

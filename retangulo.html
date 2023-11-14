@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>O portal das formas</h1>
+    </header>
+
+    <main>
+        <article>
+            <h1>Calculo do Retangulo</h1><br><br>
+
+            <h3>Para calcular a área do retângulo, basta calcular o produto entre a sua base e a sua altura, ou seja, a área é dada pela fórmula A=b⋅h.</h3><br><br>
+        
+            <button onclick="calc_retangulo()"><h3>Fazer calculo</h3></button>
+            
+        </article>
+
+        <script>
+            function calc_retangulo() {
+
+            var base = parseFloat(prompt("Insira a base do retângulo:"));
+            var altura = parseFloat(prompt("Insira a altura do retângulo:"));
+            var result = base * altura;
+
+            alert ("A área do retangulo é " + result);
+            }
+        </script>
+
+    </main>
+
+    <footer>
+        <h3>© LeonardoBarbosa2023</h3>
+    </footer>
+</body>
+</html>
